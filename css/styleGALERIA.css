@@ -1,0 +1,61 @@
+
+.galeriaFotky{
+    background-color:rgb(58, 194, 90);
+    padding-top:25px;
+    border-radius:10px;
+}
+
+.imgWrap{
+    
+    padding:2px;
+    width:14em;
+    height:20em;
+    float:left;
+    margin-bottom:-8em;
+    
+}
+
+.galeriaObrazok{
+    object-fit:cover;
+    width:100%;
+    background-color: #212529;
+    padding:5px;
+    height:50%;
+    transition:all 0.5s;
+    border-radius:10px;
+}
+
+.galeriaObrazok:hover,
+.galeriaObrazok:focus{
+    transform: scale(1.02);
+    background-color: #44494e;
+    transition:all 0.5s;
+}
+
+/* JS */
+
+#overlay{
+    background:rgba(0, 0, 0, 0.7);
+    width:100%;
+    height:100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    text-align:center;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay img{
+    margin-top:5%;
+    max-width:40em;
+    max-height:40em;
+    border: 5px solid black;
+    border-radius: 5px;
+
+    /*max-width:100%;*/
+    height:auto;
+}

@@ -1,0 +1,293 @@
+:root {
+    --bgColor:#212529;
+    --containerBgColor:rgb(58, 194, 90);
+    --tienColor:rgb(190, 219, 255);
+    --footerColorHover:rgb(148, 79, 157);
+   
+} 
+
+html {
+    overflow-y: scroll; /* tiez scrollbar */
+}
+
+body{
+    overflow: hidden;  /*Hide scrollbars , odreže moje meno zdola*/
+    height:auto;
+    background-color:var(--bgColor);
+}
+
+.hNadpis{
+    font-size: 2vw;
+    line-height: 2vw;/*ASI nerobí nič*/
+}
+
+header a,
+.containerCarousel h1{
+    text-transform: uppercase;
+}
+
+/* BG */
+
+.nahlad{
+    padding-top: 90px;
+    height: 450px;
+    margin-bottom: 60px;
+    width:100%;
+    /* background-size:contain; */
+
+    background: url(../img/1.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.hodiny{
+    font-weight: 900;
+    display:table;
+    width:auto;
+    height:auto;
+    margin:0px auto;
+    margin-left:1%;
+    border-radius:10px;
+    background-color: rgba(58, 194, 90, .5);
+}
+
+.nahladPod .container{
+    min-height:150px;
+    background-color: var(--containerBgColor);
+    border-radius:10px;
+    
+}
+
+.icon{
+    width:100px;
+    height:100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:5px;
+}
+.icon path{
+    fill:transparent;
+    stroke-width:10;
+    stroke:#070707;
+}
+.icon.tombstone path{
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 0;/*1700 JE NEVIDITELNE */
+}
+.icon.tombstone:hover path{
+    animation: animate-tombstone 2s linear forwards;
+}
+
+@keyframes animate-tombstone{
+    0%{
+        stroke-dashoffset:0;
+    }
+    40%{
+        stroke-dashoffset:1700;
+    }
+    80%{
+        stroke-dashoffset:3400;
+        fill:transparent;
+    }
+    100%{
+        stroke-dashoffset: 3400;
+        fill:var(--bgColor);
+        
+    }
+}
+
+
+.nahladPod p{
+    font-size:1.2vw;
+}
+
+.orchid{
+    font-style: italic;
+    color:rgb(150, 46, 150);
+}
+
+/* MAIN */
+.containerCarousel{
+    padding:10px;
+    background-color: var(--containerBgColor);
+    border-radius:10px;
+}
+
+.podObrazkami{
+    background-color: var(--containerBgColor);
+    margin:60px 0;
+    width:100%;
+    border-radius:5px;
+}
+
+.podObrazkami h1{
+    padding:15px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.podObrazkamiOdsek{
+    background-color: #292828;
+    padding:25px 0;
+    border-radius:15px;
+    transform:scale(1);
+    transition:all 0.5s;
+    color:white;
+}
+
+.podObrazkamiOdsek:hover,
+.podObrazkamiOdsek:focus{
+    transform:scale(1.02);
+    transition:all 0.5s;
+}
+
+.tien1{
+
+    box-shadow: -10px -10px 10px var(--tienColor);
+}
+
+.tien2{
+
+    box-shadow: 10px -10px 10px var(--tienColor);
+}
+
+.tien3{
+
+    box-shadow: -10px 10px 10px var(--tienColor);
+}
+
+.tien4{
+
+    box-shadow: 10px 10px 10px var(--tienColor);
+}
+
+.tien5{
+
+    box-shadow: 0px -10px 10px var(--tienColor);
+}
+
+.tien6{
+
+    box-shadow: 0px 10px 10px var(--tienColor);
+}
+
+.podObrazkamiObrazok{
+    background-color: rgb(189, 216, 189);
+    border-radius:15px;
+    padding:20%;
+    transform:scale(1.00);
+    transition:all 0.5s;
+}
+
+.podObrazkomText{
+    padding:15px;
+    font-size:2vw;
+    height:25%;
+    
+}
+
+
+iframe{
+    max-width:100%;
+    border-radius:5px;
+}
+
+.iframeShadow1{
+    box-shadow: -10px 10px 5px ;
+}
+
+.iframeShadow2{
+    box-shadow: 10px 10px 5px ;
+}
+
+.nazvyMiest{
+    font-size:3.75vw;
+}
+
+.podObrazkamiObrazok:hover,
+.podObrazkamiObrazok:focus{
+    color:rgb(13, 14, 13);
+    transition:all 0.5s;
+    background-color:rgb(226, 200, 223);
+    filter: drop-shadow(0px 0px 10px rgb(13, 255, 0)) ;
+    transform:scale(1.05)
+}
+
+/* FOOTER */
+
+.poslednyDiv{
+    height:auto;
+    background-color: var(--containerBgColor);
+    width:100%;
+    border-radius:5px;
+}
+
+.kontaktneUdaje{
+    padding-top:25px;
+    margin: 0 auto;
+    min-width:300px;
+    height:auto;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.kontaktneUdaje h1,
+.kontaktneUdaje h2{
+    margin:0 25px;
+    padding-bottom:15px;
+}
+
+
+.kontaktneUdajeUL{
+    list-style: none;
+    display:flex;
+    max-width:700px;
+    margin:5px auto;
+}
+
+.kontaktneUdajeUL li{
+    /*float:left; Jedno riešenie + clearfix, radšej skúsim flexbox*/
+    flex-grow: 1;
+    font-size:0.55em;
+    text-transform: none;
+}
+
+.kontaktneUdajeUL li a i{
+    color:rgb(0, 0, 0);
+}
+
+.kontaktneUdajeUL li a i:hover{
+    color:var(--footerColorHover);
+}
+
+.copyright{
+    width:100%;
+    height:25px;
+    background-color:var(--bgColor);
+    text-transform: uppercase;
+    color:gray;
+    font-style: italic;
+    font-size:0.6em;
+    margin-bottom:-5px;
+}
+
+.copyright a{
+    text-decoration: none;
+    color:rgb(118, 83, 83);
+}
+
+
+@media only screen and (max-width: 576px)
+{
+    /*
+    .podObrazkami p{
+        margin: 0 auto;
+        width:100%;
+    }
+    */
+}
+

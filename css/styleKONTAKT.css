@@ -1,0 +1,41 @@
+.kontaktInfo{
+    margin: 0 auto;
+    min-width:300px;
+    border-radius:5px;
+    background-color:var(--containerBgColor);
+    padding:25px;
+}
+
+
+
+.aremove{
+    text-decoration: none;
+}
+
+.Cisla{
+    height:auto; /* vďaka tomuto sa nastaví height ostatných colums na najdlhší column */
+}
+
+.Cisla ul li a,
+.Cisla ul li{
+    color:var(--bgColor);
+}
+
+
+.Cisla ul li a:hover,
+.Cisla ul li a:focus{
+    color:var(--footerColorHover);
+}
+
+.mestoFont{
+    font-size:0.8em;
+}
+
+@media only screen and (max-width: 576px)
+{
+    .Cisla ul{
+        margin:20px 0;
+    }
+
+
+}

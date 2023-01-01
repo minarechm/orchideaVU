@@ -1,0 +1,53 @@
+.podObrazkami2{
+    background-color:rgb(211, 114, 209);
+    margin:75px 0 0 0;
+    width:100%;
+    border-radius:5px;
+}
+
+.podObrazkami2 h1{
+    padding:15px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.podObrazkamiOdsek2{
+    background-color: #292828;
+    padding:25px 0;
+    border-radius:15px;
+    transform:scale(1);
+    transition:all 0.5s;
+    color:white;
+}
+
+.podObrazkamiOdsek2:hover,
+.podObrazkamiOdsek2:focus{
+    transform:scale(1.02);
+    transition:all 0.5s;
+}
+
+.podObrazkamiObrazok2{
+    background-color: rgb(164, 81, 177);
+    border-radius:15px;
+    padding:20%;
+    color:rgb(42, 39, 39);
+    transform:scale(1.00);
+    transition:all 0.5s;
+}
+
+.podObrazkomText{
+    padding:15px;
+    font-size:2vw;
+    height:25%;
+    
+}
+
+.podObrazkamiObrazok2:hover,
+.podObrazkamiObrazok2:focus{
+    color:rgb(255, 255, 255);
+    transition:all 0.5s;
+    background-color:rgb(226, 200, 223);
+    filter: drop-shadow(0px 0px 10px rgb(255, 6, 230)) ;
+    transform:scale(1.05)
+}

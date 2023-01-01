@@ -1,1 +1,1 @@
-[Live version](https://www.pohrebyvelkeulany.sk/). (very old project)
+[Live version](www.pohrebyvelkeulany.sk/). (very old project)
